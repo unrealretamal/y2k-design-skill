@@ -1,0 +1,6 @@
+interface:
+  display_name: "Y2K Design Agent"
+  short_description: "Art-directs and ships Y2K web interfaces: chrome, gel, aqua, orbital composition"
+  default_prompt: "Use $y2k-design-agent to art-direct and implement this interface. Declare the era and dials first, then build with real material physics, one signature control, and a full pre-flight pass."
+policy:
+  allow_implicit_invocation: true

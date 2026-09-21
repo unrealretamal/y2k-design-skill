@@ -1,0 +1,33 @@
+---
+description: Art-directs and ships Y2K web interfaces - chrome, gel, aqua, frosted plastic, orbital composition, expressive wide type. Apply when the user asks for Y2K, millennium, Y2K aesthetic, chrome, cyber-pop, Aqua/Mac OS X era, gel buttons, early-2000s revival, or a retrofuturist reinterpretation of a site. Do NOT apply for the year-2000 date bug, for synthwave/vaporwave/cyberpunk briefs, or to impose the aesthetic on work that did not ask for it.
+alwaysApply: false
+---
+
+# Y2K Design Agent
+
+This is a condensed pointer for Cursor's Agent-Requested rule loading. The full ruleset lives in
+this repo: read `SKILL.md` in full before writing any code, `references/materials.md` before any
+chrome/gel/aqua CSS, `references/motion.md` before any animation, and run
+`references/quality.md` before delivering.
+
+## The five laws
+1. The future was a product, not a vibe - surfaces look molded, not printed.
+2. Light is the material - chrome needs a reflected horizon (5+ stops, one hard edge under 2%),
+   not a 2-stop grey gradient.
+3. Optimism, not irony - this is Y2K while it was alive, not vaporwave mourning it. Default to
+   light backgrounds.
+4. Interfaces were toys - one real signature control that changes state, not a decorative
+   animation.
+5. Over-designed, never illegible - hierarchy survives with every effect stripped.
+
+## One line before any code
+State: `Reading this as: <page kind> for <audience>, <ERA> direction, materials <primary> +
+<support>, signature control <the one interactive thing>.`
+
+## Pick exactly one era
+`1997 Techno-Industrial` / `1999 Chrome Orbital (default)` / `2001 Aqua Lozenge` / `2003 Plastic
+Pop`. Never mix. Never substitute vaporwave, synthwave, cyberpunk, or Frutiger Aero - those are
+different aesthetics from different decades. `SKILL.md` Section 0 has the full confusion table.
+
+Full details: `SKILL.md`, `references/visual-recipes.md`, `references/materials.md`,
+`references/motion.md`, `references/anti-slop.md`, `references/quality.md`.
