@@ -1,6 +1,6 @@
 # Visual Recipes
 
-Pick **one** era, read **only** that section, and develop it consistently.
+Pick **one** era or adjacent mode, read **only** that section, and develop it consistently.
 Palettes, proportions and durations here are editorial decisions made for this skill, not historical or accessibility standards.
 
 ---
@@ -97,6 +97,41 @@ text       #F1F5F8     accent    #73DCEA
 - **Motif:** technical bands, tab rows, hairlines, level meters, scroll grips.
 - **Hard rule:** if there is no real audio or video, **label the player as a demonstration and do not animate a progress bar as though something were playing.**
 - **Trap to avoid:** operating-system cosplay. You are borrowing the information architecture of a media player, not simulating Windows.
+
+---
+
+## Frutiger Aero *(adjacent mode, not Y2K)*
+
+Use only when the brief explicitly asks for Frutiger Aero or post-Y2K nature-tech. Do not combine with a Y2K recipe.
+
+```
+sky       #BFE9FF      cloud     #FFFFFF
+leaf      #65C95A      water     #2E9FE8
+ink       #16405A
+```
+
+- **Composition:** open sky or white field, generous horizon space, friendly rounded forms and one clear product focus. Nature imagery supports the product rather than becoming wallpaper.
+- **Type:** humanist sans at comfortable reading sizes. Avoid techno display faces and chrome text.
+- **Material:** glossy green and blue controls, translucent plastic, water or bubble details used sparingly. Prefer real image texture over endless CSS bubbles.
+- **Motif (pick 2 max):** clouds, leaves, water curves, bubbles, soft sun discs.
+- **Signature control:** a theme, habitat or product-state switcher that changes real content, not a decorative sky animation.
+- **Trap to avoid:** generic SaaS, tropical stock imagery or a blue-green gradient pack.
+
+## Apple Web *(adjacent mode, not Y2K)*
+
+Use only for an explicitly Apple, Apple Web, Mac Web or Apple-like product brief. This is a product communication language, not a retro filter.
+
+```
+paper     #FFFFFF      graphite  #1D1D1F
+silver    #D2D2D7      blue      #0071E3
+```
+
+- **Composition:** product first, short headline, concise proof, clear action. Use generous whitespace, precise alignment and a restrained number of sections.
+- **Type:** neutral system sans or the project's existing brand type. Hierarchy comes from scale, weight and spacing, not novelty display fonts.
+- **Material:** product photography, soft aluminium, glass or translucent UI only where it explains the product. No chrome everywhere or ornamental bevel stacks.
+- **Motif (pick 1 max):** product silhouette, technical callout, quiet gradient field or material close-up.
+- **Signature control:** product variant selector, comparison control or gallery that changes the shown product state and remains keyboard operable.
+- **Trap to avoid:** copying Apple's logo, exact copy, proprietary UI or hiding information behind minimalism.
 
 ---
 

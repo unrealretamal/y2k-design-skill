@@ -59,5 +59,6 @@ The following are **invented for this skill**. Do not present them as a historic
 - The "Horizon Rule" formulation, the 5-stop and 2%-hard-edge thresholds, and the four-layer gel anatomy. These are practical heuristics that produce convincing results, not physics.
 - All durations, easing curves, motif caps, and layout-family counts.
 - The Era Confusion Table's year ranges are approximate popular-usage boundaries (cross-checked against the Y2K aesthetic and Frutiger Aero references above), not scholarly periodization.
+- Frutiger Aero and Apple Web are supported here as explicit editorial modes, not as additions to the historical Y2K era selector.
 
 If a rule here conflicts with a project's real accessibility requirement, legal obligation, or brand guideline, **the project wins**.

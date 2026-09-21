@@ -9,7 +9,8 @@ Warp, JetBrains Junie, Ona, and 15+ more) picks this repo up automatically. If y
 ## Self-gating (read first, every time)
 
 This is a **design skill**, not a general project convention. It applies **only** when the
-current request is a Y2K / millennium / chrome / gel / cyber-pop / early-2000s design brief.
+current request is a Y2K / millennium / chrome metal / gel / cyber-pop / early-2000s design brief,
+or explicitly requests the adjacent Frutiger Aero or Apple Web mode.
 For every other task in this repo or in a project where this file has been copied in, **ignore
 everything below** and behave normally. Never impose this aesthetic on work that did not ask
 for it, and never treat "Y2K" as a synonym for the year-2000 date bug.
@@ -21,7 +22,7 @@ for it, and never treat "Y2K" as a synonym for the year-2000 date bug.
 2. Before writing chrome/gel/aqua/frost/holo CSS, read `references/materials.md`.
 3. Before writing any animation, read `references/motion.md`.
 4. Before the final pass, read `references/anti-slop.md` and run `references/quality.md` in full.
-5. `references/visual-recipes.md` has one complete recipe per era - read only the one you picked.
+5. `references/visual-recipes.md` has one complete recipe per era and adjacent mode - read only the one you picked.
 
 ## The five laws (condensed - full reasoning in SKILL.md Section 0)
 
@@ -44,8 +45,9 @@ for it, and never treat "Y2K" as a synonym for the year-2000 date bug.
 | 2001 | Aqua Lozenge | Mac OS X Aqua, iMac G3, pinstripes |
 | 2003 | Plastic Pop | Motorola/Nokia color screens, MSN, holographic stickers |
 
-Never mix eras. Never substitute vaporwave, synthwave, cyberpunk, or Frutiger Aero (the *next*
-era, 2004-2013) for Y2K - `SKILL.md` Section 0 has the full confusion table.
+Never mix eras or adjacent modes. Never substitute vaporwave, synthwave or cyberpunk for Y2K.
+Frutiger Aero and Apple Web are valid only when explicitly requested and must be declared as
+separate modes - `SKILL.md` Section 0 has the full boundaries.
 
 ## Commands
 

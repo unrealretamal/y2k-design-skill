@@ -14,7 +14,7 @@ The failure modes that make AI-generated Y2K look like AI-generated Y2K. Each en
 | Katakana, kanji, "サイバー" as decoration | Vaporwave set dressing. Also careless toward a real language | Technical codes, part numbers, unit specs in the user's language |
 | Greek busts, palm trees, dolphins, checkerboard floors | Vaporwave iconography | Discs, orbits, lozenges, molded objects |
 | Under construction GIFs, hit counters, visitor badges, tiled backgrounds | Web 1.0 / Geocities amateur web, a different and cheaper aesthetic | Only if the brief explicitly asks for Geocities |
-| Glossy green, water droplets, bubbles, tropical fish | Frutiger Aero (2004-2013), the era *after* this one | Frosted candy plastic instead of wet-nature gloss |
+| Glossy green, water droplets, bubbles, tropical fish | Frutiger Aero (2004-2013), the era *after* this one when the brief says Y2K | Frosted candy plastic instead of wet-nature gloss; use the dedicated Frutiger Aero recipe only when explicitly requested |
 | VHS scanlines, chromatic aberration, "degraded" filters | Nostalgia and irony. Y2K was brand new, not a worn tape | Grain at 3-6%. Nothing damaged |
 
 ---

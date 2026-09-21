@@ -9,9 +9,9 @@ A gate that cannot be honestly ticked means the work is not done.
 
 Countable. No judgment required. Any failure blocks delivery.
 
-- [ ] Design read stated: page kind, audience, **ERA**, materials, signature control.
+- [ ] Design read stated: page kind, audience, **MODE and ERA when MODE=Y2K**, materials, signature control.
 - [ ] All three dials stated explicitly (`MATERIAL_INTENSITY`, `MOTION_INTENSITY`, `INFO_DENSITY`).
-- [ ] **One era only.** No 1999 chrome next to 2003 gel next to 1997 bevel.
+- [ ] **One era or adjacent mode only.** No 1999 chrome next to 2003 gel, 1997 bevel, Frutiger Aero nature-tech or Apple Web minimalism.
 - [ ] Every chrome gradient: **>= 5 stops**, **>= 1 stop pair under 2% apart**, unequal band widths, defined outer edge.
 - [ ] Every gel: body + specular cap + internal bounce + hue-darkened ring. One light direction page-wide.
 - [ ] Grain overlay present on material surfaces if `MATERIAL_INTENSITY >= 5`.
@@ -76,7 +76,9 @@ Test cases, not mandatory breakpoints.
 - [ ] State never signaled by color or shine alone.
 - [ ] `prefers-reduced-motion`: ambient motion off, reveals at final state, **signature control still works**.
 - [ ] `prefers-reduced-transparency`: solid fallbacks in place.
+- [ ] `prefers-contrast: more` and `forced-colors: active`: focus, controls, states and essential text remain visible; decorative materials can disappear.
 - [ ] Decorative material is `aria-hidden` and `pointer-events: none`.
+- [ ] Gel text contrast measured against its darkest rendered stop; white text is not assumed safe on vivid hues.
 - [ ] Accessible names on functional icons; alternatives for informative images.
 - [ ] Touch targets 44x44px (this skill's design standard, not the WCAG 2.5.8 AA minimum).
 

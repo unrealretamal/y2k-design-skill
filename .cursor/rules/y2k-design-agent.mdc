@@ -1,5 +1,5 @@
 ---
-description: Art-directs and ships Y2K web interfaces - chrome, gel, aqua, frosted plastic, orbital composition, expressive wide type. Apply when the user asks for Y2K, millennium, Y2K aesthetic, chrome, cyber-pop, Aqua/Mac OS X era, gel buttons, early-2000s revival, or a retrofuturist reinterpretation of a site. Do NOT apply for the year-2000 date bug, for synthwave/vaporwave/cyberpunk briefs, or to impose the aesthetic on work that did not ask for it.
+description: Art-directs and ships Y2K web interfaces - chrome, gel, aqua, frosted plastic, orbital composition, expressive wide type. Also supports explicitly requested Frutiger Aero and Apple Web modes. Apply when the user asks for Y2K, millennium, chrome metal, cyber-pop, Aqua/Mac OS X era, gel buttons, early-2000s revival, Frutiger Aero, Apple Web, or a retrofuturist reinterpretation of a site. Do NOT apply for the year-2000 date bug, synthwave/vaporwave/cyberpunk briefs, or unsolicited aesthetic changes.
 alwaysApply: false
 ---
 
@@ -21,13 +21,13 @@ chrome/gel/aqua CSS, `references/motion.md` before any animation, and run
 5. Over-designed, never illegible - hierarchy survives with every effect stripped.
 
 ## One line before any code
-State: `Reading this as: <page kind> for <audience>, <ERA> direction, materials <primary> +
+State: `Reading this as: <page kind> for <audience>, <MODE/ERA> direction, materials <primary> +
 <support>, signature control <the one interactive thing>.`
 
-## Pick exactly one era
+## Pick exactly one era or mode
 `1997 Techno-Industrial` / `1999 Chrome Orbital (default)` / `2001 Aqua Lozenge` / `2003 Plastic
-Pop`. Never mix. Never substitute vaporwave, synthwave, cyberpunk, or Frutiger Aero - those are
-different aesthetics from different decades. `SKILL.md` Section 0 has the full confusion table.
+Pop` / `FRUTIGER_AERO` / `APPLE_WEB`. Never mix. Frutiger Aero and Apple Web are explicit
+adjacent modes, not Y2K eras. Never substitute vaporwave, synthwave or cyberpunk.
 
 Full details: `SKILL.md`, `references/visual-recipes.md`, `references/materials.md`,
 `references/motion.md`, `references/anti-slop.md`, `references/quality.md`.

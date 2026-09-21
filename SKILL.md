@@ -1,6 +1,6 @@
 ---
 name: y2k-design-agent
-description: Art-directs and ships Y2K web interfaces - chrome, gel, aqua, frosted plastic, orbital composition, expressive wide type. Use when the brief asks for Y2K, millennium, Y2K aesthetic, chrome, cyber-pop, Aqua/Mac OS X era, gel buttons, early-2000s revival, or a retrofuturist reinterpretation of a site. Do NOT use for the year-2000 date bug, for synthwave/vaporwave/cyberpunk briefs, or to impose the aesthetic on work that did not ask for it.
+description: Art-directs and ships Y2K web interfaces - chrome, gel, aqua, frosted plastic, orbital composition, expressive wide type. Also supports explicitly requested adjacent modes: Frutiger Aero and Apple Web. Use when the brief asks for Y2K, millennium, Y2K aesthetic, chrome metal, cyber-pop, Aqua/Mac OS X era, gel buttons, early-2000s revival, Frutiger Aero, Apple Web, or a retrofuturist reinterpretation of a site. Do NOT use for the year-2000 date bug, for synthwave/vaporwave/cyberpunk briefs, or to impose any aesthetic on work that did not ask for it.
 ---
 
 # Y2K Design Agent
@@ -42,13 +42,22 @@ The best period work - The Designers Republic, Aqua, Wipeout, Sony's product UI,
 
 Default background assumption that most models get wrong: **commercial Y2K was overwhelmingly LIGHT.** Silver, ice, white, cream, brushed aluminium. Black-background neon is cyberpunk. Reach for dark only in the Techno-Industrial and Digital Archive directions, and say why.
 
+### Adjacent modes (explicit opt-in only)
+
+This skill also supports two neighbouring directions, but they are **not Y2K eras** and must never be blended into a Y2K recipe:
+
+- `FRUTIGER_AERO`: 2004-2013 nature-tech. Blue sky, glossy green, water, bubbles and friendly system optimism.
+- `APPLE_WEB`: Apple product/web direction, typically 1998-2007. Quiet white space, precise typography, product photography, restrained translucency and functional hierarchy.
+
+For either mode, declare `MODE` in the design read. Do not apply the Y2K Horizon Rule, Y2K motif bans, or one-era claim as if these modes were historical Y2K. Keep the shared requirements: readable hierarchy, real states, accessible controls, honest content and evidence-based delivery.
+
 ---
 
 ## 1. THE DESIGN READ (one line, before any code)
 
 State it out loud in one sentence, in the user's language:
 
-> **"Reading this as: `<page kind>` for `<audience>`, `<ERA>` direction, materials `<primary>` + `<support>`, signature control `<the one interactive thing>`."**
+> **"Reading this as: `<page kind>` for `<audience>`, `<MODE/ERA>` direction, materials `<primary>` + `<support>`, signature control `<the one interactive thing>`."**
 
 Examples:
 - *"Reading this as: a festival landing for 18-30 ravers, 1999 Chrome Orbital, chrome + ice glass, signature control is a lineup dial you drag."*
@@ -63,7 +72,8 @@ If the brief is genuinely ambiguous, ask **exactly one** question. If you can in
 Set these explicitly. Do not silently use the baseline.
 
 ```
-ERA:                 1999      # 1997 | 1999 | 2001 | 2003
+MODE:                Y2K       # Y2K | FRUTIGER_AERO | APPLE_WEB
+ERA:                 1999      # required only when MODE=Y2K: 1997 | 1999 | 2001 | 2003
 MATERIAL_INTENSITY:  7         # 1 = flat print, 10 = fully injection-molded object
 MOTION_INTENSITY:    5         # 1 = static, 10 = the whole page is a machine
 INFO_DENSITY:        4         # 1 = showroom, 10 = cockpit / control panel
@@ -291,6 +301,9 @@ Full list with reasoning in **`references/anti-slop.md`**. The ones that kill a 
 4. **Modernise in priority order:** tokens and type -> composition -> controls and states -> materials -> motion. Materials come fourth, not first.
 5. **Respect `AGENTS.md` / `CLAUDE.md` and uncommitted work.** Do not create a parallel project as a substitute for editing the real one.
 6. **Preserve the brand's actual colors** where they exist. Y2K is a material and compositional language; it does not require repainting a brand.
+7. **Use the project's design source of truth.** If `DESIGN.md`, `design.md`, `CLAUDE.md`, or an equivalent product brief exists, read it before changing UI. Separate implemented decisions from future proposals and open questions.
+8. **Protect content truthfulness.** Do not invent credits, dates, clients, metrics or testimonials. Mark demo content as demo content, keep it out of indexing where relevant, and preserve provenance for sourced media.
+9. **Record verification honestly.** Report actual routes, viewports, commands and browser checks performed. Distinguish verified behavior from assumptions and known gaps.
 
 ---
 
@@ -328,6 +341,9 @@ Run **`references/quality.md`** in full before delivering. The mechanical Y2K ga
 - [ ] Contrast measured against the darkest **and** lightest band of every material surface it sits on.
 - [ ] Focus ring visible on chrome, gel, dark and light surfaces (dual-ring).
 - [ ] Reduced motion and reduced transparency both tested, product still usable.
+- [ ] `prefers-contrast: more` and `forced-colors: active` do not hide focus, controls or essential content.
+- [ ] Existing design source of truth read; implemented decisions are not confused with future proposals.
+- [ ] Demo or placeholder content is labeled and cannot be mistaken for verified work.
 - [ ] One signature control, and it changes real state.
 - [ ] Max 2 decorative motif families, repeated intentionally, `aria-hidden`, `pointer-events: none`.
 - [ ] At least 4 distinct layout families across 8 sections. No 3 consecutive identical splits.
@@ -351,7 +367,7 @@ Run **`references/quality.md`** in full before delivering. The mechanical Y2K ga
 ### Reference files
 | File | Read it when |
 |---|---|
-| `references/visual-recipes.md` | After picking an era. Full recipe for that one direction. |
+| `references/visual-recipes.md` | After picking an era or explicit adjacent mode. Full recipe for that one direction. |
 | `references/materials.md` | Before writing any chrome / gel / aqua / frost / holo CSS. |
 | `references/motion.md` | Before writing any animation. |
 | `references/anti-slop.md` | Before the pre-flight check. |

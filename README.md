@@ -25,6 +25,7 @@ Works with **every major coding agent** - see the install matrix below.
 | A decorative hero animation | One signature control that changes real state |
 | "Y2K vibes" | A named era (1997 / 1999 / 2001 / 2003) with its own composition, materials and motifs |
 | Shine over a flat 2024 template | A grayscale test that fails the page before you see it |
+| Frutiger Aero or Apple Web mixed into Y2K | An explicit adjacent mode with its own recipe and boundaries |
 
 ---
 
@@ -70,12 +71,14 @@ All three point at the same source of truth: `SKILL.md` plus `references/`. Edit
 
 ## Use
 
-Just ask. The skill triggers on Y2K, millennium, chrome, gel, aqua, cyber-pop, early-2000s, and similar briefs.
+Just ask. The skill triggers on Y2K, millennium, chrome metal, gel, aqua, cyber-pop, early-2000s, Frutiger Aero, Apple Web, and similar briefs. Frutiger Aero and Apple Web are explicit adjacent modes, never blended into a Y2K era.
 
 ```
 Build me a Y2K landing page for a techno festival. Go hard.
 Restyle this dashboard with subtle 2001 Aqua. Don't touch the routes.
 Design a Y2K media player for a netlabel. Spec only, no code.
+Build me a Frutiger Aero homepage for a nature-tech product.
+Design an Apple Web product page with restrained translucency.
 ```
 
 The agent answers with a one-line design read before writing anything:
@@ -86,7 +89,7 @@ Override it conversationally. `"make it 2003, more plastic, less chrome"` is a v
 
 ---
 
-## The four eras
+## Eras And Modes
 
 | Era | Name | World |
 |---|---|---|
@@ -97,13 +100,24 @@ Override it conversationally. `"make it 2003, more plastic, less chrome"` is a v
 
 Plus **Digital Archive**, a cross-era overlay for anything that is fundamentally a list of media.
 
-**One era per project.** Mixing them is how you get the generic metallic template this skill exists to prevent. `references/sources.md` has dated, named period references (Wipeout/The Designers Republic/Eurostile, Aqua, iMac G3, Frutiger Aero as the era that came *after*) so the era boundaries aren't just asserted.
+**One era or mode per project.** Mixing them is how you get the generic metallic template this skill exists to prevent. `references/sources.md` has dated, named period references (Wipeout/The Designers Republic/Eurostile, Aqua, iMac G3, Frutiger Aero as the era that came *after*) so the boundaries aren't just asserted.
+
+### Adjacent modes
+
+These are explicit alternatives, not extra Y2K eras:
+
+| Mode | Direction | Use it for |
+|---|---|---|
+| `FRUTIGER_AERO` | Nature-tech optimism: sky, water, glossy green, friendly system surfaces | Briefs that explicitly name Frutiger Aero or post-Y2K nature-tech |
+| `APPLE_WEB` | Product communication: white space, precise type, product photography, restrained translucency | Apple, Mac Web or Apple-like product pages |
+
+Declare `MODE` before implementation. Use only the selected recipe in [`references/visual-recipes.md`](references/visual-recipes.md). Never blend either mode with a Y2K era.
 
 ---
 
 ## What it refuses to do
 
-Vaporwave, synthwave, cyberpunk and Frutiger Aero are **different aesthetics from different decades**, and the skill says so instead of blending them in. It also bans neon-on-black defaults, chrome on body text, fake Windows 95 chrome, sparkle emoji, autoplay audio, custom cursors, invented testimonials, and em-dashes.
+Vaporwave, synthwave and cyberpunk are **different aesthetics from different decades**, and the skill says so instead of blending them in. Frutiger Aero and Apple Web are supported only as explicit adjacent modes. It also bans neon-on-black defaults, chrome on body text, fake Windows 95 chrome, sparkle emoji, autoplay audio, custom cursors, invented testimonials, and em-dashes.
 
 The full list, with reasoning, is in [`references/anti-slop.md`](references/anti-slop.md).
 
@@ -116,15 +130,16 @@ SKILL.md                      the philosophy, dials, and rules (always loaded)
 AGENTS.md                     universal pointer for the 25+ tools that read AGENTS.md natively
 .cursor/rules/y2k-design-agent.mdc   Cursor-native Agent Requested rule
 references/
-  visual-recipes.md           one full recipe per era
+  visual-recipes.md           one full recipe per era and adjacent mode
   materials.md                copy-adaptable chrome / gel / aqua / frost / holo CSS
   motion.md                   timing, easings, signature-control patterns
   anti-slop.md                Y2K AI tells and the three tests
-  quality.md                  the pre-flight gate and acceptance cases
-  sources.md                  verified requirements, dated period references, and this skill's editorial choices - clearly separated
-agents/openai.yaml            Codex interface manifest
-assets/cover.webp               this README's banner, not part of the skill itself
-LICENSE                        MIT
+  quality.md                the pre-flight gate and acceptance cases
+  sources.md                verified requirements, dated period references, and this skill's editorial choices - clearly separated
+scripts/check-docs.rb       dependency-free documentation link and metadata check
+agents/openai.yaml           Codex interface manifest
+assets/cover.webp            this README's banner, not part of the skill itself
+LICENSE                      MIT
 ```
 
 ---
@@ -140,3 +155,23 @@ Accessibility here is not a brake on the aesthetic. It is what makes the bold ve
 ## License
 
 [MIT](LICENSE).
+
+## Documentation QA
+
+This is a documentation-only package. There is no application build or runtime test suite.
+Validation covers:
+
+- Markdown structure and internal file references.
+- YAML frontmatter presence in `SKILL.md` and Cursor rule metadata.
+- Consistency between `SKILL.md`, `AGENTS.md`, `.cursor/rules/` and `references/`.
+- `git diff --check` for whitespace errors.
+
+Run the lightweight repository check with:
+
+```bash
+ruby scripts/check-docs.rb
+git diff --check
+```
+
+Before shipping an implementation that uses this skill, run the target project's own build,
+lint, accessibility and responsive checks. This repository does not claim those checks were run.
