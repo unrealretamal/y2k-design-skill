@@ -31,3 +31,7 @@ adjacent modes, not Y2K eras. Never substitute vaporwave, synthwave or cyberpunk
 
 Full details: `SKILL.md`, `references/visual-recipes.md`, `references/materials.md`,
 `references/motion.md`, `references/anti-slop.md`, `references/quality.md`.
+
+For React behavior primitives, prefer optional Radix UI primitives for accessible dialogs, tabs,
+switches and tooltips. Own the visual treatment in project CSS; do not add the dependency for one
+static view.

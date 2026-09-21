@@ -23,6 +23,7 @@ for it, and never treat "Y2K" as a synonym for the year-2000 date bug.
 3. Before writing any animation, read `references/motion.md`.
 4. Before the final pass, read `references/anti-slop.md` and run `references/quality.md` in full.
 5. `references/visual-recipes.md` has one complete recipe per era and adjacent mode - read only the one you picked.
+6. For React behavior primitives, Radix UI is the preferred optional base; keep Y2K visuals in project CSS and do not add it for one static view.
 
 ## The five laws (condensed - full reasoning in SKILL.md Section 0)
 

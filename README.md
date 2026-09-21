@@ -179,3 +179,12 @@ git diff --check
 
 Before shipping an implementation that uses this skill, run the target project's own build,
 lint, accessibility and responsive checks. This repository does not claim those checks were run.
+
+## Component Primitives
+
+For React projects, use **Radix UI primitives** when accessible behavior is needed for dialogs,
+tabs, switches, tooltips or popovers. Radix supplies behavior, focus management and ARIA wiring;
+the project should own the Y2K, Frutiger Aero or Apple Web styling in CSS.
+
+Do not add Radix for one static view, and do not treat a prebuilt Radix theme as the visual system.
+Native HTML or an existing accessible design system remains the better choice when it already fits.

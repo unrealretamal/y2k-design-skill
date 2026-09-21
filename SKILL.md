@@ -218,6 +218,20 @@ One expressive display family + one neutral workhorse + (optional) one monospace
 - Do not build a component library for a single view. Style what the page actually uses.
 - In a redesign, keep the semantics of existing primitives and restyle them. Do not fork the design system.
 
+### 6.A Optional behavior primitives
+
+For React projects that need accessible dialogs, tabs, switches, tooltips or popovers, prefer
+**Radix UI primitives** as the behavior layer. Keep the visual layer local to the project:
+
+- Use Radix for keyboard behavior, focus management, ARIA wiring and state attributes.
+- Apply this skill's tokens, materials and states through the project's own CSS or CSS Modules.
+- Do not import a prebuilt Radix visual theme and call it Y2K.
+- Do not add Radix for a single static view when native HTML already provides the behavior.
+- Preserve existing primitives and dependencies during a redesign unless the project explicitly approves a change.
+
+Radix is a recommendation, not a requirement. A native element or an existing accessible design
+system wins when it already satisfies the product's behavior and accessibility needs.
+
 ---
 
 ## 7. MOTION
