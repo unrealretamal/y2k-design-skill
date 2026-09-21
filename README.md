@@ -39,7 +39,8 @@ whole repo to the path your tool expects.
 | **Claude Code** | `SKILL.md` | `~/.claude/skills/y2k-design-agent/` | Personal, all projects |
 | **Claude Code** (project) | `SKILL.md` | `.claude/skills/y2k-design-agent/` | This project only |
 | **Windsurf** | `SKILL.md` | `.windsurf/skills/y2k-design-agent/` | This project only |
-| **Codex / OpenCode** | `SKILL.md` | `.agents/skills/y2k-design-agent/` | This project only |
+| **Codex** | `SKILL.md` | `.agents/skills/y2k-design-agent/` | This project only |
+| **OpenCode** | `SKILL.md` | `.opencode/skills/y2k-design-agent/` or `.agents/skills/y2k-design-agent/` | This project only |
 | **Cursor** | `.cursor/rules/*.mdc` | already in this repo's `.cursor/rules/` | Copy that one file into your project's `.cursor/rules/` |
 | **Everything else that reads `AGENTS.md`**: GitHub Copilot coding agent, Gemini CLI, Aider, Zed, Devin, Amp, Factory, Google Jules, RooCode, Augment, Warp, JetBrains Junie, Ona, and 15+ more | `AGENTS.md` | clone as a subfolder, e.g. `design/y2k-design-agent/`, then add one line to your project's own `AGENTS.md`: `For Y2K/millennium design briefs, read design/y2k-design-agent/AGENTS.md in full first.` | Wherever you point it |
 
@@ -47,10 +48,13 @@ whole repo to the path your tool expects.
 # Claude Code, personal
 git clone https://github.com/unrealretamal/y2k-design-skill.git ~/.claude/skills/y2k-design-agent
 
-# Claude Code (project) / Windsurf / Codex / OpenCode - swap the destination
+# Claude Code (project) / Windsurf / Codex - swap the destination
 git clone https://github.com/unrealretamal/y2k-design-skill.git .claude/skills/y2k-design-agent
 git clone https://github.com/unrealretamal/y2k-design-skill.git .windsurf/skills/y2k-design-agent
 git clone https://github.com/unrealretamal/y2k-design-skill.git .agents/skills/y2k-design-agent
+
+# OpenCode - project-local install
+git clone https://github.com/unrealretamal/y2k-design-skill.git .opencode/skills/y2k-design-agent
 
 # Cursor - copy just the rule file into your own project
 curl -o .cursor/rules/y2k-design-agent.mdc \
