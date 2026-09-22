@@ -117,6 +117,38 @@ ink       #16405A
 - **Signature control:** a theme, habitat or product-state switcher that changes real content, not a decorative sky animation.
 - **Trap to avoid:** generic SaaS, tropical stock imagery or a blue-green gradient pack.
 
+### Frutiger Aero component recipe
+
+| Component | Treatment | Functional requirement |
+|---|---|---|
+| Primary action | Glossy blue or green control with a bright upper rim and dark readable ink | Clear label, 44px target, visible pressed and focus states |
+| Secondary action | Cloud-white or translucent surface with a blue-green border | Must remain distinct from the background at rest and on hover |
+| Field | Solid white or pale sky fill, soft border, small inner highlight | Persistent label, error text and no placeholder-as-label |
+| Panel | One translucent layer over a calm environmental background | Solid fallback when transparency is reduced; content must not depend on blur |
+| Selector | Rounded track with a physical thumb or habitat dial | Changes real state; selected state differs from hover by position, fill or label |
+| Image | Product or environmental image with explicit dimensions | Useful alt text; no decorative photo used as the only source of meaning |
+
+### Frutiger Aero token starter
+
+```css
+:root {
+  --aero-sky: #BFE9FF;
+  --aero-cloud: #FFFFFF;
+  --aero-water: #2E9FE8;
+  --aero-leaf: #65C95A;
+  --aero-sun: #F6C744;
+  --aero-ink: #16405A;
+  --aero-muted: #416B7C;
+  --aero-field: #F2FBFF;
+  --aero-focus: #123B52;
+  --aero-radius-control: 999px;
+  --aero-radius-panel: 18px;
+}
+```
+
+Use `--aero-ink` or a darker hue variant for text. Do not place white text on bright leaf,
+water or sun surfaces without measuring the darkest and lightest rendered stops.
+
 ## Apple Web *(adjacent mode, not Y2K)*
 
 Use only for an explicitly Apple, Apple Web, Mac Web or Apple-like product brief. This is a product communication language, not a retro filter.
@@ -133,9 +165,39 @@ silver    #D2D2D7      blue      #0071E3
 - **Signature control:** product variant selector, comparison control or gallery that changes the shown product state and remains keyboard operable.
 - **Trap to avoid:** copying Apple's logo, exact copy, proprietary UI or hiding information behind minimalism.
 
+### Apple Web component recipe
+
+| Component | Treatment | Functional requirement |
+|---|---|---|
+| Primary action | Solid product blue, white label, subtle inner highlight | Clear label, 44px target, visible pressed and focus states |
+| Secondary action | White or light silver surface, neutral border | Must remain distinct from paper background at rest and on hover |
+| Field | Solid white fill, neutral border, no material fill | Persistent label, error text and no placeholder-as-label |
+| Panel | White or light silver surface with a defined edge | No nested transparency, content must not depend on glass alone |
+| Selector | Segmented control or variant picker with shape or position change | Changes real product state; selected state differs from hover |
+| Image | Product image with explicit dimensions and quiet background | Useful alt text; no decorative photo used as the only source of meaning |
+
+### Apple Web token starter
+
+```css
+:root {
+  --apple-paper: #FFFFFF;
+  --apple-graphite: #1D1D1F;
+  --apple-silver: #D2D2D7;
+  --apple-blue: #0071E3;
+  --apple-blue-ink: #0058B0;
+  --apple-muted: #6E6E73;
+  --apple-field: #F5F5F7;
+  --apple-focus: #1D1D1F;
+  --apple-radius-control: 999px;
+  --apple-radius-panel: 16px;
+}
+```
+
+Use `--apple-blue-ink` for blue text on light surfaces. Keep contrast measured against the real paper and field surfaces.
+
 ---
 
-## Component Map (applies to every era)
+## Component Map (applies to every Y2K era)
 
 | Component | Treatment | Functional requirement |
 |---|---|---|

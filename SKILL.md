@@ -51,6 +51,61 @@ This skill also supports two neighbouring directions, but they are **not Y2K era
 
 For either mode, declare `MODE` in the design read. Do not apply the Y2K Horizon Rule, Y2K motif bans, or one-era claim as if these modes were historical Y2K. Keep the shared requirements: readable hierarchy, real states, accessible controls, honest content and evidence-based delivery.
 
+### Frutiger Aero mode rules
+
+When `MODE=FRUTIGER_AERO`, switch from manufactured chrome to **friendly nature-tech**. The
+visual promise is that technology is safe, useful and connected to a clean living world.
+
+- **Light:** use an open sky, white cloud or soft grass horizon. Light should feel atmospheric,
+  not metallic. Avoid the Y2K chrome horizon and hard industrial bands.
+- **Palette:** start with sky blue, cloud white, leaf green and water blue. Use one warm accent,
+  such as sun yellow or orange, only for a real action. Keep ink deep blue or blue-green.
+- **Materials:** use translucent plastic, soft gloss, water refraction, foam, bubbles and real
+  natural image texture. Every transparent surface needs a solid fallback.
+- **Composition:** create a clear horizon or environmental depth cue, then place one product or
+  content focus in front of it. Use rounded organic forms, gentle overlap and generous air.
+- **Typography:** use a humanist sans or a friendly system stack. Prioritize comfortable reading,
+  medium weights and short labels. Do not use techno display faces, chrome text or fake terminal copy.
+- **Motifs:** choose at most two from clouds, leaves, bubbles, water curves, sun discs and soft
+  lens-like highlights. Motifs must explain environment or state, not fill empty space.
+- **Signature control:** make a real environment, color, habitat or product-state switcher. The
+  control changes content or theme and remains usable without animation.
+- **Motion:** use slow floating, parallax or liquid settling only when it explains depth. Maximum
+  one ambient loop. Disable it completely for reduced motion.
+- **Content:** write with clear, optimistic product language. Use real benefits, units and labels,
+  not "system online", fake ecology claims or generic wellness copy.
+- **Anti-slop:** no tropical stock collage, endless bubbles, glossy green on every surface, blue-
+  green gradient wallpaper, water droplets on unrelated UI, or nature imagery that obscures content.
+
+Frutiger Aero is not a darker Y2K variant, a tropical brand kit or a generic SaaS gradient. If the
+brief asks for a product page with quiet precision instead, use `MODE=APPLE_WEB`.
+
+### Apple Web mode rules
+
+When `MODE=APPLE_WEB`, switch from expressive Y2K to **product communication**. The interface
+explains a real product with precision and restraint.
+
+- **Light:** use soft, neutral studio light. Keep highlights clean and shadows quiet. No chrome
+  horizon, neon glow, or heavy gloss stack.
+- **Palette:** start with paper white, graphite ink, cool silver and one controlled product blue.
+  Use color only to signal the product or a real action.
+- **Materials:** lead with product photography, soft aluminium and restrained glass or translucency.
+  Each glass layer needs a solid fallback and must keep the product legible.
+- **Composition:** product first, short headline, concise proof, clear action. Use generous white
+  space, precise alignment and a small number of sections.
+- **Typography:** use a neutral system sans or the project's existing brand type. Hierarchy comes
+  from scale, weight and spacing, not decorative display faces.
+- **Motifs:** choose at most one from product silhouette, technical callout, quiet gradient field or
+  material close-up. No ornament without a product reason.
+- **Signature control:** make a real product variant selector, comparison control or gallery that
+  changes the shown product state and remains keyboard operable.
+- **Motion:** use restrained transitions only when they explain the product. No ambient orbit or
+  decorative floating. Reduced motion keeps every control usable.
+- **Content:** write specific, verifiable product copy with clear benefits and real details. No
+  invented specs, superlatives without proof, or decorative filler.
+- **Anti-slop:** no copied Apple logo, exact Apple copy, proprietary UI mimicry, or minimalism used
+  to hide information.
+
 ---
 
 ## 1. THE DESIGN READ (one line, before any code)
@@ -79,9 +134,9 @@ MOTION_INTENSITY:    5         # 1 = static, 10 = the whole page is a machine
 INFO_DENSITY:        4         # 1 = showroom, 10 = cockpit / control panel
 ```
 
-**Baseline: `1999 / 7 / 5 / 4`.** Overrides happen conversationally, never by editing this file.
+**Baseline: `Y2K 1999 / 7 / 5 / 4`.** For `FRUTIGER_AERO` and `APPLE_WEB`, keep the same three dials but evaluate them against the selected mode recipe instead of a Y2K era. Overrides happen conversationally, never by editing this file.
 
-### 2.A Era selector (each maps to a full recipe in `references/visual-recipes.md`)
+### 2.A Era selector (Y2K only, each maps to a full recipe in `references/visual-recipes.md`)
 | ERA | Name | World | Palette seed | Reach for it when |
 |---|---|---|---|---|
 | **1997** | Techno-Industrial | The Designers Republic, Wipeout, Prodigy, warning labels | Concrete `#16181C`, paper `#E8E8E3`, hazard `#FF4B00`, signal `#D8FF00` | Music, club, streetwear, anything that should feel engineered and slightly hostile |
@@ -91,7 +146,7 @@ INFO_DENSITY:        4         # 1 = showroom, 10 = cockpit / control panel
 
 Plus **Digital Archive** (Winamp skins, media players, file browsers) as a cross-era overlay for any brief that is fundamentally a list of media.
 
-**One era per project.** Do not show all four to prove range. Mixing eras is how you get the generic metallic template this skill exists to prevent.
+**One era or mode per project.** Do not show all four Y2K eras to prove range, and never mix a Y2K era with an adjacent mode. Mixing is how you get the generic metallic template this skill exists to prevent.
 
 ### 2.B Dial inference
 | Signal in the brief | MATERIAL | MOTION | DENSITY |
@@ -343,14 +398,14 @@ Say so explicitly and point elsewhere: dense admin dashboards and data grids (us
 
 ## 14. PRE-FLIGHT CHECK
 
-Run **`references/quality.md`** in full before delivering. The mechanical Y2K gates, any one of which fails the output:
+Run **`references/quality.md`** in full before delivering. For `MODE=Y2K`, the mechanical Y2K gates below apply. For `FRUTIGER_AERO` and `APPLE_WEB`, use the selected mode recipe and keep all shared usability, accessibility, responsive and evidence gates:
 
-- [ ] Design read declared, era and all three dials stated.
-- [ ] **One** era. No mixing.
-- [ ] Chrome has >= 5 stops, a hard horizon edge under 2%, unequal band widths, and a defined outer edge.
-- [ ] Gel has all four layers, one consistent light direction across every gel element on the page.
-- [ ] Noise overlay present if `MATERIAL_INTENSITY >= 5`.
-- [ ] No chrome, gradient, or outlined type under 32px.
+- [ ] Design read declared, MODE and all three dials stated; ERA stated when MODE is Y2K.
+- [ ] **One era or mode only.** No mixing.
+- [ ] Chrome has >= 5 stops, a hard horizon edge under 2%, unequal band widths, and a defined outer edge. (Y2K only)
+- [ ] Gel has all four layers, one consistent light direction across every gel element on the page. (Y2K only)
+- [ ] Noise overlay present if `MATERIAL_INTENSITY >= 5` and MODE is Y2K.
+- [ ] No chrome, gradient, or outlined type under 32px. (Y2K chrome rule; adjacent modes use their own material constraints)
 - [ ] Grayscale test passes: hierarchy holds with every effect removed.
 - [ ] Contrast measured against the darkest **and** lightest band of every material surface it sits on.
 - [ ] Focus ring visible on chrome, gel, dark and light surfaces (dual-ring).

@@ -117,6 +117,34 @@ These are explicit alternatives, not extra Y2K eras:
 
 Declare `MODE` before implementation. Use only the selected recipe in [`references/visual-recipes.md`](references/visual-recipes.md). Never blend either mode with a Y2K era.
 
+### Frutiger Aero direction
+
+Frutiger Aero is now a complete mode, not a palette switch. Its rules cover:
+
+- Open sky, cloud or soft grass depth instead of metallic chrome.
+- Sky blue, cloud white, water blue, leaf green and one warm action accent.
+- Translucent plastic, soft gloss, water refraction and restrained natural texture.
+- Humanist typography, comfortable reading sizes and clear optimistic product copy.
+- At most two environmental motif families per view.
+- One real habitat, color or product-state control.
+- Reduced-motion and reduced-transparency fallbacks for every atmospheric effect.
+
+Avoid tropical stock collages, endless bubbles, glossy green wallpaper, fake ecology claims and
+nature imagery that hides content. The full component recipe and starter tokens live in
+[`references/visual-recipes.md`](references/visual-recipes.md).
+
+### Apple Web direction
+
+Apple Web is also a complete mode for product pages. Its rules cover:
+
+- Paper white, graphite ink and cool silver with one controlled product blue.
+- Product photography first, soft aluminium and restrained glass.
+- Generous white space, precise alignment and a small number of sections.
+- Neutral system type, hierarchy from scale and weight, short verifiable copy.
+- At most one product motif family per view.
+- One real variant selector, comparison control or product gallery.
+- Solid fallbacks for any translucent surface and no ornament without a product reason.
+
 ---
 
 ## What it refuses to do
@@ -138,12 +166,12 @@ references/
   materials.md                copy-adaptable chrome / gel / aqua / frost / holo CSS
   motion.md                   timing, easings, signature-control patterns
   anti-slop.md                Y2K AI tells and the three tests
-  quality.md                the pre-flight gate and acceptance cases
-  sources.md                verified requirements, dated period references, and this skill's editorial choices - clearly separated
-scripts/check-docs.rb       dependency-free documentation link and metadata check
-agents/openai.yaml           Codex interface manifest
-assets/cover.webp            this README's banner, not part of the skill itself
-LICENSE                      MIT
+  quality.md                  the pre-flight gate and acceptance cases
+  sources.md                  verified requirements, dated period references, and this skill's editorial choices - clearly separated
+scripts/check-docs.rb        dependency-free documentation link and metadata check
+agents/openai.yaml            Codex interface manifest
+assets/cover.webp             this README's banner, not part of the skill itself
+LICENSE                       MIT
 ```
 
 ---

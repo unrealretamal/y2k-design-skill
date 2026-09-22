@@ -3,6 +3,10 @@
 Run this before delivering. Do not substitute an invented quality score for observable evidence.
 A gate that cannot be honestly ticked means the work is not done.
 
+When `MODE=Y2K`, run all Y2K material gates below. When `MODE=FRUTIGER_AERO` or
+`MODE=APPLE_WEB`, skip Y2K-only chrome, gel, grain and era gates and evaluate the selected
+mode's recipe instead. Shared accessibility, functionality, responsive and evidence gates always apply.
+
 ---
 
 ## 1. Mechanical Y2K gates
